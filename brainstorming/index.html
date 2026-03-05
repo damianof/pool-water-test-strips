@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pool Water Test Strip Reference</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for color swatches if needed */
+        .swatch {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-8 text-gray-800 font-sans">
+
+    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+
+        <div class="px-6 space-y-2">
+
+            <!-- Total Chlorine & Free Chlorine (Often share the same scale on some strips, but let's separate them) -->
+            <!-- Total Chlorine -->
+            <div class="test-row">
+                <div class="flex justify-between items-end mb-2">
+                    <h3 class="text-xl font-bold text-gray-700">Total Chlorine (ppm)</h3>
+                </div>
+                <div class="flex flex-wrap gap-2 sm:gap-4 justify-start">
+                    <!-- 0 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #fdf7db"></div>
+                        <span class="mt-1 font-mono font-bold">0</span>
+                    </div>
+                    <!-- 0.5 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #f2f7da"></div>
+                        <span class="mt-1 font-mono font-bold">0.5</span>
+                    </div>
+                    <!-- 1 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #d3eec0"></div>
+                        <span class="mt-1 font-mono font-bold">1</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 3 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #b5e5be"></div>
+                        <span class="mt-1 font-mono font-bold">3</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 5 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #98d7c1"></div>
+                        <span class="mt-1 font-mono font-bold">5</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 10 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #79cacc"></div>
+                        <span class="mt-1 font-mono font-bold">10</span>
+                    </div>
+                    <!-- 20 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #64bfce"></div>
+                        <span class="mt-1 font-mono font-bold">20</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-200">
+            
+            <!-- Free Chlorine -->
+            <div class="test-row">
+                <div class="flex justify-between items-end mb-2">
+                    <h3 class="text-xl font-bold text-gray-700">Free Chlorine (ppm)</h3>
+                    <span class="text-sm text-gray-500">Sanitizer</span>
+                </div>
+                <div class="flex flex-wrap gap-2 sm:gap-4 justify-start">
+                    <!-- 0 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #ffffff"></div>
+                        <span class="mt-1 font-mono font-bold">0</span>
+                    </div>
+                    <!-- 0.5 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #e7f7fa"></div>
+                        <span class="mt-1 font-mono font-bold">0.5</span>
+                    </div>
+                    <!-- 1 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #cdeef5"></div>
+                        <span class="mt-1 font-mono font-bold">1</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 3 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #a6dfec"></div>
+                        <span class="mt-1 font-mono font-bold">3</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 5 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #85cee5"></div>
+                        <span class="mt-1 font-mono font-bold">5</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 10 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #73c7e5"></div>
+                        <span class="mt-1 font-mono font-bold">10</span>
+                    </div>
+                    <!-- 20 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #60c0e3"></div>
+                        <span class="mt-1 font-mono font-bold">20</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-200">
+
+            <!-- Free Bromine -->
+            <div class="test-row">
+                <div class="flex justify-between items-end mb-2">
+                    <h3 class="text-xl font-bold text-gray-700">Free Bromine (ppm)</h3>
+                </div>
+                <div class="flex flex-wrap gap-2 sm:gap-4 justify-start">
+                    <!-- 0 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #fdfdfb"></div>
+                        <span class="mt-1 font-mono font-bold">0</span>
+                    </div>
+                    <!-- 1 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #fdedf0"></div>
+                        <span class="mt-1 font-mono font-bold">1</span>
+                    </div>
+                    <!-- 2 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #f0d4e7"></div>
+                        <span class="mt-1 font-mono font-bold">2</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 5 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #e1bde1"></div>
+                        <span class="mt-1 font-mono font-bold">5</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 10 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #cfa1d5"></div>
+                        <span class="mt-1 font-mono font-bold">10</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 20 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #c491bc"></div>
+                        <span class="mt-1 font-mono font-bold">20</span>
+                    </div>
+                    <!-- 40 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #b57ca5"></div>
+                        <span class="mt-1 font-mono font-bold">40</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-200">
+
+            <!-- Total Hardness -->
+            <div class="test-row">
+                <div class="flex justify-between items-end mb-2">
+                    <h3 class="text-xl font-bold text-gray-700">Total Hardness (ppm)</h3>
+                    <span class="text-sm text-gray-500">Soft &rarr; Hard</span>
+                </div>
+                <div class="flex flex-wrap gap-2 sm:gap-4 justify-start">
+                    <!-- 0 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #4e6d97"></div>
+                        <span class="mt-1 font-mono font-bold">0</span>
+                    </div>
+                    <!-- 50 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #617bb8"></div>
+                        <span class="mt-1 font-mono font-bold">50</span>
+                    </div>
+                    <!-- 100 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #6573b1"></div>
+                        <span class="mt-1 font-mono font-bold">100</span>
+                    </div>
+                    <!-- 250 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #6a67a5"></div>
+                        <span class="mt-1 font-mono font-bold">250</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 500 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #7a609f"></div>
+                        <span class="mt-1 font-mono font-bold">500</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 1000 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #8c5f9f"></div>
+                        <span class="mt-1 font-mono font-bold">1000</span>
+                    </div>
+                </div>
+            </div>
+
+             <hr class="border-gray-200">
+
+            <!-- Cyanuric Acid -->
+            <div class="test-row">
+                <div class="flex justify-between items-end mb-2">
+                    <h3 class="text-xl font-bold text-gray-700">Cyanuric Acid / Stabilizer (ppm)</h3>
+                </div>
+                <div class="flex flex-wrap gap-2 sm:gap-4 justify-start">
+                    <!-- 0 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #fbb965"></div>
+                        <span class="mt-1 font-mono font-bold">0</span>
+                    </div>
+                    <!-- 30-50 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #ec895e"></div>
+                        <span class="mt-1 font-mono font-bold">30-50</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 100 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #cf604f"></div>
+                        <span class="mt-1 font-mono font-bold">100</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 150 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #b54951"></div>
+                        <span class="mt-1 font-mono font-bold">150</span>
+                    </div>
+                    <!-- 240 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #c34987"></div>
+                        <span class="mt-1 font-mono font-bold">240</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-200">
+
+            <!-- Total Alkalinity -->
+            <div class="test-row">
+                <div class="flex justify-between items-end mb-2">
+                    <h3 class="text-xl font-bold text-gray-700">Total Alkalinity (ppm)</h3>
+                </div>
+                <div class="flex flex-wrap gap-2 sm:gap-4 justify-start">
+                    <!-- 0 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #fedd7d"></div>
+                        <span class="mt-1 font-mono font-bold">0</span>
+                    </div>
+                    <!-- 40 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #c5c27c"></div>
+                        <span class="mt-1 font-mono font-bold">40</span>
+                    </div>
+                    <!-- 80 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #a4b77e"></div>
+                        <span class="mt-1 font-mono font-bold">80</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 120 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #7faa81"></div>
+                        <span class="mt-1 font-mono font-bold">120</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 180 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #558472"></div>
+                        <span class="mt-1 font-mono font-bold">180</span>
+                    </div>
+                    <!-- 240 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #46716a"></div>
+                        <span class="mt-1 font-mono font-bold">240</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-gray-200">
+
+            <!-- pH -->
+            <div class="test-row">
+                <div class="flex justify-between items-end mb-2">
+                    <h3 class="text-xl font-bold text-gray-700">pH</h3>
+                    <span class="text-sm text-gray-500">Acidic &rarr; Basic</span>
+                </div>
+                <div class="flex flex-wrap gap-2 sm:gap-4 justify-start">
+                    <!-- 6.2 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #fdd06a"></div>
+                        <span class="mt-1 font-mono font-bold">6.2</span>
+                    </div>
+                    <!-- 6.8 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #fcc068"></div>
+                        <span class="mt-1 font-mono font-bold">6.8</span>
+                    </div>
+                    <!-- 7.2 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #faaa60"></div>
+                        <span class="mt-1 font-mono font-bold">7.2</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 7.6 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #fa9177"></div>
+                        <span class="mt-1 font-mono font-bold">7.6</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 7.8 (Ideal) -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm ring-2 ring-green-400 ring-offset-2" style="background-color: #fa7b71"></div>
+                        <span class="mt-1 font-mono font-bold">7.8</span>
+                        <span class="text-xs text-green-600 font-bold">OK</span>
+                    </div>
+                    <!-- 8.4 -->
+                    <div class="flex flex-col items-center">
+                        <div class="swatch rounded shadow-sm" style="background-color: #fb646a"></div>
+                        <span class="mt-1 font-mono font-bold">8.4</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg-gray-50 p-4 text-center text-sm text-gray-500">
+            Colors are approximate representation. Always refer to original packaging in critical situations.
+        </div>
+    </div>
+
+</body>
+</html>
