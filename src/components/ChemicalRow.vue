@@ -12,7 +12,7 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <div class="py-4 border-b border-gray-200 last:border-0">
+  <div class="border-b border-gray-200 last:border-0 px-4 py-2 sm:px-6 sm:py-4">
     <div class="flex items-baseline gap-2 mb-3">
       <h3 class="text-base font-bold text-gray-800">{{ chemical.name }}</h3>
       <span v-if="chemical.unit" class="text-sm text-gray-500">({{ chemical.unit }})</span>
@@ -31,11 +31,8 @@ const emit = defineEmits<{
         @click="emit('select', sw)"
       >
         <span
-          class="w-12 h-12 rounded-md shadow-sm transition-transform duration-100 group-hover:scale-110"
-          :class="[
-            sw.isIdeal ? 'ring-2 ring-green-400 ring-offset-1' : 'ring-1 ring-gray-200',
-            selected?.value === sw.value ? 'scale-110 ring-2 ring-blue-500 ring-offset-2' : '',
-          ]"
+          class="size-7 sm:size-12 rounded-md shadow-sm transition-transform duration-100 group-hover:scale-110"
+          :class="[selected?.value === sw.value ? 'scale-110 ring-2 ring-blue-500 ring-offset-2' : '']"
           :style="{ backgroundColor: sw.color.hex }"
         />
         <span class="text-xs font-mono font-semibold text-gray-700 leading-none">
